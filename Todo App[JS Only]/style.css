@@ -1,0 +1,81 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #444;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Darker shadow */
+}
+
+/* Active (pressed) effect */
+button:active {
+    transform: translateY(1px); /* Slight press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Focus effect */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.5); /* Green outline on focus */
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
