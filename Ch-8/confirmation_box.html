@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script>
+        function conf(){
+            ret=confirm("Do you want to continue ??");
+
+            if(ret==true) 
+            { 
+                document.write("User wants to Continue"); 
+                return true; 
+            } 
+            else 
+            { 
+                document.write("User does not wants to Continue"); 
+                return false; 
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="OK" onclick="conf()"/>
+</body>
+</html>
