@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script>
+        function fun(e)
+        {
+            val=e.button;
+
+            switch(val)
+            {
+                case 0:
+                    alert("Left Click");
+                    break;
+                case 1:
+                    alert("Middle Click");
+                    break;
+                case 2:
+                    alert("Right Click");
+                    break;
+            }
+        }
+    </script>
+
+    <body>
+        <div onmousedown="fun(event)" style="width:30%;height: 20%; background-color: rgb(20, 170, 125); border: 2px solid black;">
+            CLICK HERE FROM YOUR MOUSE TO SHOW MOUSE CLICKS
+        </div>
+    </body>
+</head>
+</html>

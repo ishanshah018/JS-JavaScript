@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script>
+        function fun(id)
+        {
+            val=document.getElementById("t1").value;
+            if(val==""){
+                alert("Enter Something");
+                return false;
+            }
+            else{
+                alert(val)
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" onsubmit="fun(this)">
+        <input type="text" id="t1"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

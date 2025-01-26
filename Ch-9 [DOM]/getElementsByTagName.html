@@ -1,0 +1,24 @@
+<html>
+<head>
+    <script>
+        function test()
+        {
+            cl=document.getElementsByTagName("p");
+
+            for(i=0;i<cl.length;i++){
+                cl[i].innerHTML="Changed Text";
+                cl[i].style.color="red";
+                cl[i].style.backgroundColor="cyan";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>P1 tag</p>
+    <p>P2 tag</p>
+    <p>P3 tag</p>
+
+    <input type="button" onclick="test();" value="CLICK"/>
+</body>
+</html>

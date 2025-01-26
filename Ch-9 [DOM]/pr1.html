@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script>
+        function up()
+        {
+            a=document.getElementsByTagName("p");
+
+            for(i=0;i<a.length;i++){
+                a[i].style.textTransform="upperCase";
+            }
+            
+        }
+
+        function low()
+        {
+            b=document.getElementsByTagName("p");
+
+            for(i=0;i<b.length;i++){
+                b[i].style.textTransform="lowerCase";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <p>Hello Ishan</p>
+    <input type="button" onclick="up()" value="Capital"/>
+    <input type="button" onclick="low()" value="Small"/>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html> 
+ <head> 
+  <script> 
+   function test() 
+   { 
+    cl = document.getElementsByClassName("same"); 
+    for(i=0; i<cl.length;i++) 
+    { 
+     cl[i].innerHTML = "Changed text"; 
+     cl[i].style.color = "red"; 
+     cl[i].style.backgroundColor = "cyan"; 
+    } 
+   } 
+  </script> 
+ </head> 
+ <body> 
+  <h1 class="same">H1 tag<h1> 
+  <p class="same">P tag</p> 
+  <pre class="same">Pre tag</pre> 
+  <input type="button" onclick="test();" value="CLICK"/> 
+ </body> 
+</html> 
