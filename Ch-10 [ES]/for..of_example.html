@@ -1,0 +1,19 @@
+<!--  Write Es6 script to find maximum number from an array using for… of loop -->
+
+<html>
+<head></head>
+<body>
+    <script>
+        large=0;
+        arr=[10,20,30,15,11];
+
+        for(i of arr)
+        {
+            if(i>large){
+                large=i;
+            }
+        }
+        document.write(large)
+    </script>
+</body>
+</html>

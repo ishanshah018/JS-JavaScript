@@ -1,0 +1,26 @@
+<!--  Write Es6 function to be called on button click. Take one division with some 
+text and no decoration initially. Take font size and style as default argument and pass 
+background color and text color while passing argument to function style should change 
+on button click. -->
+
+<html>
+<head>
+    <script>
+        fun1=(bg,txtcol,size=50,style="italic")=>
+        {
+            i=document.getElementById("d1");
+            i.style.backgroundColor=bg;
+            i.style.color=txtcol;
+            i.style.fontSize=size;
+            i.style.fontStyle=style;
+        }
+    </script>
+</head>
+<body>
+    <div id="d1" style="width: 50%; height: 50%;">
+        Ishan Shah
+    </div>
+
+    <input type="submit" onclick="fun1('orange','red')" value="CLICK HERE"/>
+</body>
+</html>
